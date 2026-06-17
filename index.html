@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Pesquisa Culturama</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Pesquisa online</h1>      
+    </header>
+    <section>
+        <form action="" method="get">
+            <fieldset>
+                <!-- DADOS PESSOAIS -->
+                 
+                <legend>Dados Pessoais</legend>
+                <label for="username">Nome:</label>
+                <input type="text" name="username" required> <!--campo obrigatorio -->
+                <br>
+                <!-- IDADE -->
+                <label for="userage">Idade:</label>
+                <input type="number" name="userage" min="12" max="100" required>
+                <br>
+                <!-- DATA DE NASCIMENTO -->
+                <label for="birthdate">Data de nascimento:</label>
+                <input type="date" name="birthdate">
+                <br>
+                <!-- EMAIL -->
+                <label for="useremail">Email:</label>
+                <input type="email" name="useremail" required>
+                <br>
+                <!-- TELEFONE -->
+                <label for="userphonenumber">Telefone:</label>
+                <input type="tel" name="userphonenumber" pattern="[0-9]{11}" placeholder="DDD + numero"> 
+                <!--pattern=padrao [numeros aceitos]{quant. numeros} 
+                placeholder = campo cinza com instruçoes de como preencher corretamente o campo-->
+                <br>
+                <!-- Foto -->
+                <label for="userimage">Upload de foto</label>
+                <input type="file" accept="image/*" name="userimage">
+                <br>
+                <button type="Submit">Enviar</button> 
+            </fieldset>
+        </form>
+    </section>
 </body>
 </html>
