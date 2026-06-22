@@ -12,37 +12,102 @@
     </header>
     <section>
         <form action="" method="get">
-            <fieldset>
-                <!-- DADOS PESSOAIS -->
+            <!-- <fieldset>
+                 DADOS PESSOAIS 
                  
                 <legend>Dados Pessoais</legend>
                 <label for="username">Nome:</label>
-                <input type="text" name="username" required> <!--campo obrigatorio -->
+                <input type="text" name="username" required> <!--campo obrigatorio 
                 <br>
-                <!-- IDADE -->
+                
                 <label for="userage">Idade:</label>
                 <input type="number" name="userage" min="12" max="100" required>
                 <br>
-                <!-- DATA DE NASCIMENTO -->
+                
                 <label for="birthdate">Data de nascimento:</label>
                 <input type="date" name="birthdate">
                 <br>
-                <!-- EMAIL -->
+                
                 <label for="useremail">Email:</label>
                 <input type="email" name="useremail" required>
                 <br>
-                <!-- TELEFONE -->
+                
                 <label for="userphonenumber">Telefone:</label>
                 <input type="tel" name="userphonenumber" pattern="[0-9]{11}" placeholder="DDD + numero"> 
                 <!--pattern=padrao [numeros aceitos]{quant. numeros} 
-                placeholder = campo cinza com instruçoes de como preencher corretamente o campo-->
+                placeholder = campo cinza com instruçoes de como preencher corretamente o campo
                 <br>
-                <!-- Foto -->
+                
                 <label for="userimage">Upload de foto</label>
                 <input type="file" accept="image/*" name="userimage">
+                <br> </fieldset> -->
+               
+           
+            
+
+            <fieldset>
+                <legend>Perfil</legend>
+
+                <p>Gênero: </p>
+                <input type="radio" name="userGender" value="Feminino">
+                <label for="userGender">Feminino</label>
+
+                <input type="radio" name="userGender" value="Masculino">
+                <label for="userGender">Masculino</label>
+
+                <input type="radio" name="userGender" value="not_informed">
+                <label for="userGender">Prefiro näo informar</label>
                 <br>
-                <button type="Submit">Enviar</button> 
+
+                <label for="maritalstatus">Estado civil: </label>
+                <!-- LISTA SUSPENSA -->
+                <select name="maritalstatus">
+                    <option value="notinformed">Selecione...</option>
+                    <option value="casado">Casado</option>
+                    <option value="solteiro">Solteiro</option>
+                    <option value="viuvo">Viúvo</option>
+                    <option value="uniaoEstavel">Uniao Estável</option>
+                    <option value="divorciado">Divorciado</option>
+                </select>
+                
+
+                <label for="userState">Estado": </label>
+                <select name="userState">
+                <option value="Acre">Acre</option>    
+                <option value="Alagoas">Alagoas</option> 
+                <option value="Amapá">Amapá</option>   
+                <option value="Amazonas">Amazonas</option>
+                <option value="Bahia">Bahia</option>   
+                <option value="Ceará">Ceará</option>   
+                <option value="Distrito Federal">Distrito Federal</option>  
+                <option value="Espirito Santo">Espirito Santo</option>    
+                <option value="Goiás">Goiás</option>    
+                <option value="Maranhão">Maranhão</option>    
+                <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>   
+                <option value="Mato Grosso">Mato Grosso</option>    
+                <option value="Minas Gerais">Minas Gerais</option>    
+                <option value="Pará">Pará</option>    
+                <option value="Paraíba">Paraíba</option>    
+                <option value="Paraná">Paraná</option>    
+                <option value="Pernambuco">Pernambuco</option>    
+                <option value="Piauí">Piauí</option>   
+                <option value="Rio de Janeiro">Rio de Janeiro</option>    
+                <option value="Rio Grande do Norte">Rio Grande do Norte</option>    
+                <option value="Rio Grande do Sul">Rio Grande do Sul</option>    
+                <option value="Rondônia">Rondônia</option>    
+                <option value="Roraima">Roraima</option>    
+                <option value="Santa Catarina">Santa Catarina</option>    
+                <option value="São Paulo">São Paulo</option>    
+                <option value="Sergipe">Sergipe</option>    
+                <option value="Tocantins">Tocantins</option>    
+                </select>
+
+                <label for="usercity">Cidade: </label>
+                <input type="text" name="usercity" >
             </fieldset>
+            
+            
+        <button type="Submit">Enviar</button> 
         </form>
     </section>
 </body>
