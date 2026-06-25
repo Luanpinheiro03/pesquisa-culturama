@@ -1,19 +1,19 @@
 @font-face {
-    font-family: "Fjalla_One";
+    font-family: "Fjalla_One", sans-serif;
     src: url("../fonts/Fjalla_One/FjallaOne-Regular.ttf")
     format("truetype");
 }
 
 @font-face {
-    font-family: "Work_Sans";
+    font-family: "Work_Sans", sans-serif;
     src: url("../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf")
     format("truetype");
 }
 
 h1{
-    font-family: "Fjalla_One";
+    font-family: "Fjalla_One", sans-serif;
 }
 
-p{
-    font-family: "Work_Sans";
+body{
+    font-family: "Work_Sans", sans-serif;
 }
