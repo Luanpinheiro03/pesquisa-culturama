@@ -91,12 +91,19 @@ input[type="color"]{
     padding: 0 5px;
 }
 
-input:invalid, select:invalid, textarea:invalid{
-    border-color: red;
+input:invalid ~ .icon-error{
+    display: inline; 
+    color: red;
 }
 
-input:valid, select:valid, textarea:valid{
-    border-color: green;
+input:valid + .icon-success{
+    color: green;
+    display: inline;
+
+}
+
+.icon-success, .icon-error{
+    display: none;
 }
 
 button{
@@ -118,3 +125,5 @@ button[type="reset"]:hover{
     background-color: red;
     color: #ffffff;
 }
+
+
